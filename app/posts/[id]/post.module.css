@@ -1,0 +1,151 @@
+.article {
+  max-width: 850px;
+  margin: 0 auto;
+  padding: 4rem 2rem 6rem;
+  text-align: left;
+}
+
+/* 記事タイトル */
+.article h1 {
+  margin: 0 0 0.8rem;
+  font-size: 2.8rem;
+  line-height: 1.3;
+  font-weight: 800;
+  color: #222;
+  letter-spacing: -0.03em;
+}
+
+/* 日付 */
+.article > div:first-of-type {
+  margin-bottom: 3rem;
+  font-size: 0.9rem;
+  color: #999;
+}
+
+/* Markdown本文 */
+.content {
+  color: #333;
+  font-size: 1.05rem;
+  line-height: 2;
+}
+
+/* 段落 */
+.content p {
+  margin: 0 0 2rem;
+}
+
+/* h1 */
+.content h1 {
+  margin: 3.5rem 0 1.5rem;
+  font-size: 2rem;
+  line-height: 1.4;
+  font-weight: 700;
+}
+
+/* h2 */
+.content h2 {
+  margin: 3rem 0 1.2rem;
+  padding-bottom: 0.5rem;
+  font-size: 1.6rem;
+  line-height: 1.4;
+  font-weight: 700;
+  border-bottom: 2px solid #eee;
+}
+
+/* h3 */
+.content h3 {
+  margin: 2.5rem 0 1rem;
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+/* 太字 */
+.content strong {
+  font-weight: 700;
+  color: #222;
+}
+
+/* リスト */
+.content ul,
+.content ol {
+  margin: 1.5rem 0 2rem;
+  padding-left: 2rem;
+}
+
+.content li {
+  margin-bottom: 0.6rem;
+}
+
+/* 引用 */
+.content blockquote {
+  margin: 2rem 0;
+  padding: 1rem 1.5rem;
+  border-left: 4px solid #ddd;
+  background: #f8f8f8;
+  color: #666;
+}
+
+/* インラインコード */
+.content code {
+  padding: 0.2rem 0.4rem;
+  border-radius: 4px;
+  background: #f1f1f1;
+  font-family: monospace;
+  font-size: 0.9em;
+}
+
+/* コードブロック */
+.content pre {
+  margin: 2rem 0;
+  padding: 1.5rem;
+  overflow-x: auto;
+  border-radius: 8px;
+  background: #222;
+  color: #fff;
+  line-height: 1.7;
+}
+
+.content pre code {
+  padding: 0;
+  background: transparent;
+  color: inherit;
+}
+
+/* 画像 */
+.content img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 2.5rem auto;
+  border-radius: 8px;
+}
+
+/* リンク */
+.content a {
+  color: #0070f3;
+  text-decoration: underline;
+}
+
+/* スマホ */
+@media (max-width: 600px) {
+  .article {
+    padding: 2.5rem 1.2rem 4rem;
+  }
+
+  .article h1 {
+    font-size: 2rem;
+  }
+
+  .content {
+    font-size: 1rem;
+    line-height: 1.8;
+  }
+
+  .content h1 {
+    font-size: 1.6rem;
+  }
+
+  .content h2 {
+    font-size: 1.4rem;
+  }
+}
