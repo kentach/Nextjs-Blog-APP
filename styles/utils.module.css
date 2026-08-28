@@ -19,7 +19,7 @@
   font-size: 2rem;
   line-height: 1.4;
   margin-top: 0;
-  font-weight: 500;
+  font-weight: 700;
 }
 
 .headingMd {
@@ -28,16 +28,22 @@
   text-align: center;
 }
 
+.headingSm {
+  font-size: 1rem;
+  line-height: 1.2;
+  text-align: center;
+}
+
 .borderCircle {
-  border-radius: 1000px;
+  border-radius: 50%;
 }
 
 .colorInherit {
   color: inherit;
 }
 
-.padding1px {
-  padding-top: 1px;
+.paddingSm {
+  padding: 5px;
 }
 
 .list {
@@ -51,10 +57,10 @@
 }
 
 .lightText {
-  color: #999;
+  color: #888;
 }
 
 .boldText {
-  color: black;
-  font-weight: 550;
+  color: #222;
+  font-weight: 600;
 }
