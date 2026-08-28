@@ -1,8 +1,9 @@
 import Image from "next/image";
 import styles from "./header.module.css";
-import utilStyle from "../styles/utils.module.css"
+import utilStyle from "../styles/utils.module.css";
 
 const name = "Shin Code";
+const profile = "私はフルスタックエンジニアです。好きな言語は、JavaScriptです。"
 
 export default function Header() {
   return (
@@ -16,6 +17,9 @@ export default function Header() {
           className={utilStyle.borderCircle}
         />
         <h1 className={utilStyle.heading2Xl}>{name}</h1>
+        <div className={utilStyle.headingMd}>
+          <p>{profile}</p>
+        </div>
       </header>
     </div>
   );

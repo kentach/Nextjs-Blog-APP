@@ -1,0 +1,59 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px;
+  max-width: 1000px;
+  margin: 40px auto 0;
+}
+
+/* ブログカード */
+.grid article {
+  background-color: #ffffff;
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* カード全体のホバー */
+.grid article:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+/* サムネイル */
+.thumbnailImage {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+/* 画像を少し拡大 */
+.grid article:hover .thumbnailImage {
+  transform: scale(1.03);
+}
+
+/* 記事タイトル */
+.grid article a {
+  display: inline-block;
+  padding: 20px 20px 8px;
+  color: #222;
+  font-size: 20px;
+  text-decoration: none;
+  line-height: 1.5;
+}
+
+/* タイトルのホバー */
+.grid article a:hover {
+  color: #0070f3;
+}
+
+/* 日付 */
+.grid article small {
+  display: block;
+  padding: 0 20px 20px;
+  font-size: 13px;
+  color: #888;
+}
