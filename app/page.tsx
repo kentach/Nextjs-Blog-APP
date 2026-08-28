@@ -6,7 +6,7 @@ export default function Home() {
   const allPostsData = getPostsData();
 
   return (
-    <Layout>
+    <Layout home={true}>
       <BlogList posts={allPostsData} />
     </Layout>
   );

@@ -1,6 +1,4 @@
 
-export default function page() {
-  return (
-    <div></div>
-  )
+export default function generateStaticParams() {
+  return <div></div>;
 }
