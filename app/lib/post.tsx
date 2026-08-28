@@ -3,18 +3,15 @@ import fs from "fs";
 import matter from "gray-matter";
 import type { PostDataProps } from "@/types/post";
 
-const postDirectory = path.join(process.cwd(), "app/posts");
+const postDirectory = path.join(process.cwd(), "app/postData");
 
 export function getPostsData(): PostDataProps[] {
   const fileNames = fs.readdirSync(postDirectory);
 
   const allPostsData = fileNames.map((filename) => {
     const id = filename.replace(/\.md$/, "");
-
     const fullPath = path.join(postDirectory, filename);
-
     const fileContents = fs.readFileSync(fullPath, "utf-8");
-
     const matterResult = matter(fileContents);
 
     return {

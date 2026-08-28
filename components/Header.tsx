@@ -3,7 +3,8 @@ import styles from "./header.module.css";
 import utilStyle from "../styles/utils.module.css";
 
 const name = "Shin Code";
-const profile = "私はフルスタックエンジニアです。好きな言語は、JavaScriptです。"
+const profile =
+  "私はフルスタックエンジニアです。好きな言語は、JavaScriptです。";
 
 export default function Header() {
   return (
